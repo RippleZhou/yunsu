@@ -1,0 +1,126 @@
+/**
+ * coding by Alex of 2017-08-08
+ */
+
+/* variable */ 
+$gf = #fff;
+$f4 = #f4f4f4;
+$g3 = #333;
+$e5 = #e5e5e5;
+$_g69 = #696969;
+
+$default_blue = #148aed;
+$default_bd_blue = #0176d6;
+$default_blue_hover = #0a7ad7;
+$default_bd_blue_hover = #0166ba;
+
+$default_green = #a4d43e;
+$default_bd_green = #85b61d;
+$default_green_hover = #8bbc22;
+$default_bd_green_hover = $default_bd_green;
+
+$default_orange = #fa9400;
+$default_bd_orange = #e28703;
+$default_orange_hover = #f78d03;
+$default_bd_orange_hover = #d75c02;
+
+$default_gray = #bdbdbd;
+$default_bd_gray = #a6a6a6;
+$default_gray_hover = #a9a9a9;
+$default_bd_gray_hover = $default_bd_gray;
+
+$table_header_bgcolor = #e4f3ff;
+$dialog_blue = #00a8ff;
+
+$warn_red = #ff0000;
+
+.layout-content
+    /* 水平 padding */ 
+    .pad-line-default
+        padding: 0 12px
+    
+    /* 公共按钮 */
+    .btn
+        display: inline-block
+        padding: 0
+        margin-bottom: 0
+
+        /* 统一宽高 */ 
+        width: 75px;
+        height: 30px;
+        color: $gf
+
+        font-size: 14px
+        font-weight: 400
+        line-height: 30px
+        text-align: center
+        white-space: nowrap
+        vertical-align: middle
+        -ms-touch-action: manipulation
+        touch-action: manipulation
+        cursor: pointer
+        -ms-user-select: none
+        -moz-user-select: none
+        -webkit-user-select: none
+        user-select: none
+        background-image: none
+        border: 1px solid transparent
+        &.btn-large
+            width: 105px
+        &.btn-small
+            width: 75px
+            height: 30px
+        &.btn-blue
+            background-color: $default_blue
+            border-color: $default_bd_blue
+            &:hover
+                background-color: $default_blue_hover
+                border-color: $default_bd_blue_hover
+        &.btn-green
+            background-color: $default_green
+            border-color: $default_bd_green
+            &:hover
+                background-color: $default_green_hover
+                border-color: $default_bd_green_hover
+        &.btn-orange
+            background-color: $default_orange
+            border-color: $default_bd_orange
+            &:hover
+                background-color: $default_orange_hover
+                border-color: $default_bd_orange_hover
+        &.btn-gray
+            background-color: $default_gray
+            border-color: $default_bd_gray
+            &:hover
+                background-color: $default_gray_hover
+                border-color: $default_bd_gray_hover
+
+        /* 默认锐角按钮 */ 
+        border-radius: 0px;
+    
+    .el-button+.el-button
+        margin: 0
+
+    /* 清除ele-ui表单样式 */
+    .el-input__inner
+        position: relative
+        width: 105px
+        height: 30px
+        font-size: 12px
+        border-radius: 0
+        border-color: $e5
+
+    .required
+        position: relative
+        &::after
+            content: "*"
+            position: absolute
+            top: 50%
+            right: -10px
+            color:$warn_red
+            transform: translateY(-50%)
+    
+    .prod-plans-wrap
+        background-color: $gf
+        margin: 10px 
+        padding-bottom: 10px
